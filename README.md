@@ -192,5 +192,4 @@ INSERT INTO RSVPs (user_id, event_id, status) VALUES
 - For production, add more validations, error handling, and security measures.
 
 
-![GitHub last commit](https://img.shields.io/github/last-commit/KEYUR141/PixaBeam-Event-Manager)
-![GitHub issues](https://img.shields.io/github/issues/KEYUR141/PixaBeam-Event-Manager)
+
