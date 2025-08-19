@@ -189,7 +189,7 @@ INSERT INTO RSVPs (user_id, event_id, status) VALUES
 ## 📝 Notes
 
 - This is a minimal demo for HR assessment purposes.
-- For production, add more validations, error handling, and security measures.
+- For production, we can add more validations, error handling, and security measures.
 
 
 
