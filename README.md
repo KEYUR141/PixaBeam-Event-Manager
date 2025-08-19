@@ -168,11 +168,14 @@ INSERT INTO RSVPs (user_id, event_id, status) VALUES
 ### **Screenshots**
 
 - **Database Schema Screenshot:**  
-  ![Supabase Tables](./assets/supabase-tables.png)
+  <img src="Screenshot 2025-08-19 224811.png">
+
 
 - **App Pages:**  
-  ![Events List Screenshot](./assets/events-list.png)  
-  ![RSVP Page Screenshot](./assets/rsvp-page.png)
+  <img src="Screenshot 2025-08-19 222339.png">
+  <img src="Screenshot 2025-08-19 222402.png">
+  <img src="Screenshot 2025-08-19 222414.png">
+  
 
 ---
 
