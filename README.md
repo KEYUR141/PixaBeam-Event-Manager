@@ -102,7 +102,7 @@ INSERT INTO RSVPs (user_id, event_id, status) VALUES
 - 5 events
 - 20 RSVPs
 
-*(See `/db/sample_data.sql` for the full insert statements.)*
+
 
 ---
 
@@ -160,7 +160,7 @@ INSERT INTO RSVPs (user_id, event_id, status) VALUES
 
 ### **Deployment**
 
-- **Vercel Link:** [Live Demo](https://[your-vercel-link])
+- **Vercel Link:** [Live Demo](https://pixa-beam-event-manager-dgbg.vercel.app/)
 - **Supabase Backend:** Connected via environment variables.
 
 ---
@@ -177,18 +177,7 @@ INSERT INTO RSVPs (user_id, event_id, status) VALUES
   <img src="Screenshot 2025-08-19 222414.png">
   
 
----
 
-## 📦 Repo Structure
-
-```
-/db                   # SQL schema, sample data
-/assets               # Screenshots, ER diagram
-/pages                # Next.js pages
-/components           # React components
-/utils                # Supabase helpers
-README.md
-```
 
 ---
 
