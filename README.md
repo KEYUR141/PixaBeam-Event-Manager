@@ -135,8 +135,8 @@ INSERT INTO RSVPs (user_id, event_id, status) VALUES
 
 1. **Clone the Repo**
     ```bash
-    git clone [your-repo-link]
-    cd [your-repo-folder]
+    git clone https://github.com/KEYUR141/PixaBeam-Event-Manager.git
+    cd event-rsvp
     ```
 
 2. **Set Up Environment**
