@@ -10,6 +10,11 @@ This project is a simple event platform where users can:
 It uses **Supabase** for the backend (database & authentication) and **Next.js** for the frontend.  
 This repo is part of the PixaBeam HR Team technical task.
 
+# 💻 Technologies Used:
+![Supabase](https://img.shields.io/badge/supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 ---
 
 ## 🗄️ Part 1: Database Design
