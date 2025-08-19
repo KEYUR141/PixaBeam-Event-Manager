@@ -197,12 +197,4 @@ README.md
 - This is a minimal demo for HR assessment purposes.
 - For production, add more validations, error handling, and security measures.
 
----
 
-## 🙌 Thanks!
-For any questions, please contact [your email or GitHub profile].
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# PixaBeam-Event-Manager
->>>>>>> 5a6aff1341d6af1b196c874428f8b9c62f7c25ad
