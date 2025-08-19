@@ -108,7 +108,7 @@ INSERT INTO RSVPs (user_id, event_id, status) VALUES
 
 ### **ER Diagram**
 
-![ER Diagram Screenshot](./assets/er-diagram.png)
+![ER Diagram Screenshot](Screenshot 2025-08-19 220111.png.png)
 
 ---
 
