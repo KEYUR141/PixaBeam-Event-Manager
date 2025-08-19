@@ -91,7 +91,7 @@ INSERT INTO RSVPs (user_id, event_id, status) VALUES
 
 #### **Constraints & Integrity**
 
-- **Primary Keys:** All tables use UUID as primary key.
+- **Primary Keys:** All tables used INT as primary key.
 - **Foreign Keys:** `created_by` in `events` → `users(id)`, `user_id` in `rsvps` → `users(id)`, `event_id` in `rsvps` → `events(id)`.
 - **Cascade Delete:** If a user is deleted, associated events and RSVPs are also deleted.
 - **Unique RSVP**: One RSVP per user per event.
@@ -114,7 +114,7 @@ INSERT INTO RSVPs (user_id, event_id, status) VALUES
 
 ### **Design Choices**
 
-- **UUIDs** for scalability and security.
+- **PKs** for scalability and security.
 - **Cascade Deletes** to ensure data integrity and prevent orphaned records.
 - **Unique RSVP constraint** ensures users can't RSVP multiple times for the same event.
 - **Status ENUM** for RSVP status for easy querying and validation.
