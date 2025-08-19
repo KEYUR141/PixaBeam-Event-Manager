@@ -23,32 +23,69 @@ This repo is part of the PixaBeam HR Team technical task.
 ### **Schema (SQL Extract)**
 
 ```sql
--- Users Table
-CREATE TABLE users (
-    id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-    name VARCHAR(100) NOT NULL,
-    email VARCHAR(100) UNIQUE NOT NULL,
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT now()
-);
+-- CREATE TABLE Users(
+--   id SERIAL PRIMARY KEY,
+--   name TEXT NOT NULL,
+--   email TEXT UNIQUE NOT NULL,
+--   craeted_at TIMESTAMP DEFAULT NOW()
+-- );
+-- INSERT INTO users (name, email)
+-- VALUES
+--   ('Alice Johnson', 'alice@example.com'),
+--   ('Bob Smith', 'bob@example.com'),
+--   ('Charlie Brown', 'charlie@example.com'),
+--   ('Diana Prince', 'diana@example.com'),
+--   ('Ethan Hunt', 'ethan@example.com'),
+--   ('Fiona Davis', 'fiona@example.com'),
+--   ('George Miller', 'george@example.com'),
+--   ('Hannah Lee', 'hannah@example.com'),
+--   ('Ian Thomas', 'ian@example.com'),
+--   ('Julia Roberts', 'julia@example.com');
 
--- Events Table
-CREATE TABLE events (
-    id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-    title VARCHAR(255) NOT NULL,
-    description TEXT,
-    date DATE NOT NULL,
-    city VARCHAR(100),
-    created_by uuid NOT NULL REFERENCES users(id) ON DELETE CASCADE
-);
+-- CREATE TABLE Events(
+--   id SERIAL PRIMARY KEY,
+--   title TEXT NOT NULL,
+--   description TEXT,
+--   date DATE NOT NULL,
+--   city TEXT NOT NULL,
+--   created_by INT REFERENCES Users(id) ON DELETE CASCADE
+-- );
 
--- RSVPs Table
-CREATE TABLE rsvps (
-    id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-    user_id uuid NOT NULL REFERENCES users(id) ON DELETE CASCADE,
-    event_id uuid NOT NULL REFERENCES events(id) ON DELETE CASCADE,
-    status VARCHAR(10) CHECK (status IN ('Yes', 'No', 'Maybe')),
-    UNIQUE (user_id, event_id)
-);
+-- INSERT INTO events (title, description, date, city, created_by) VALUES
+-- ('Tech Conference 2025', 'A gathering of developers and tech enthusiasts.', '2025-09-15', 'Bangalore', 1),
+-- ('Music Fest', 'Live music performances by popular bands.', '2025-09-20', 'Mumbai', 2),
+-- ('Startup Pitch Night', 'Entrepreneurs pitch their startups to investors.', '2025-10-05', 'Delhi', 3),
+-- ('Art Exhibition', 'Display of modern art by young artists.', '2025-10-12', 'Pune', 4),
+-- ('Hackathon', '24-hour coding challenge for students.', '2025-10-20', 'Hyderabad', 5);
+
+-- CREATE TABLE RSVPs (
+--   id SERIAL PRIMARY KEY,
+--   user_id INT REFERENCES users(id) ON DELETE CASCADE,
+--   event_id INT REFERENCES events(id) ON DELETE CASCADE,
+--   status TEXT CHECK (status IN ('Yes', 'No', 'Maybe')) NOT NULL
+-- );
+
+-- INSERT INTO RSVPs (user_id, event_id, status) VALUES
+-- (1, 1, 'Yes'),
+-- (2, 1, 'Maybe'),
+-- (3, 1, 'No'),
+-- (4, 2, 'Yes'),
+-- (5, 2, 'Yes'),
+-- (6, 2, 'Maybe'),
+-- (7, 2, 'No'),
+-- (8, 3, 'Yes'),
+-- (9, 3, 'Yes'),
+-- (10, 3, 'No'),
+-- (1, 4, 'Maybe'),
+-- (2, 4, 'Yes'),
+-- (3, 4, 'No'),
+-- (4, 4, 'Yes'),
+-- (5, 5, 'Yes'),
+-- (6, 5, 'No'),
+-- (7, 5, 'Maybe'),
+-- (8, 5, 'Yes'),
+-- (9, 5, 'Maybe'),
+-- (10, 5, 'No');
 ```
 
 #### **Constraints & Integrity**
