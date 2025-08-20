@@ -194,11 +194,10 @@ INSERT INTO RSVPs (user_id, event_id, status) VALUES
 
 ## 📝 Notes
 
-- ###This is a minimal demo for HR assessment purposes.
+- ### This is a minimal demo for HR assessment purposes.
 - ### For production, we can add more validations, error handling, and security measures.
-- ###  Access Control-
-    RSVP entries are **read-only** for public users.  
-    Only authenticated admins can modify RSVP status via the dashboard.
+- ###  Access Control-  RSVP entries are **read-only** for public users. Only authenticated admins can modify RSVP status via the dashboard.
+   
 
 
 
